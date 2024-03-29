@@ -3062,6 +3062,95 @@ namespace app
 		bool has_value;
 	};
 
+	struct __declspec(align(8)) Delegate__Fields
+	{
+		void* method_ptr;
+		void* invoke_impl;
+		struct Object* m_target;
+		void* method;
+		void* delegate_trampoline;
+		void* extra_arg;
+		void* method_code;
+		void* interp_method;
+		void* interp_invoke_impl;
+		struct MethodInfo_1* method_info;
+		struct MethodInfo_1* original_method_info;
+		struct DelegateData* data;
+		bool method_is_virtual;
+	};
+
+	struct Delegate
+	{
+		struct Delegate__Class* klass;
+		MonitorData* monitor;
+		struct Delegate__Fields fields;
+	};
+
+	struct MulticastDelegate__Fields
+	{
+		struct Delegate__Fields _;
+		struct Delegate__Array* delegates;
+	};
+
+	struct Rect
+	{
+		float m_XMin;
+		float m_YMin;
+		float m_Width;
+		float m_Height;
+	};
+
+	struct __declspec(align(8)) GUIContent__Fields
+	{
+		struct String* m_Text;
+		struct Texture* m_Image;
+		struct String* m_Tooltip;
+	};
+
+	struct GUIContent
+	{
+		struct GUIContent__Class* klass;
+		MonitorData* monitor;
+		struct GUIContent__Fields fields;
+	};
+
+	struct __declspec(align(8)) GUIStyle__Fields
+	{
+		void* m_Ptr;
+		struct GUIStyleState* m_Normal;
+		struct GUIStyleState* m_Hover;
+		struct GUIStyleState* m_Active;
+		struct GUIStyleState* m_Focused;
+		struct GUIStyleState* m_OnNormal;
+		struct GUIStyleState* m_OnHover;
+		struct GUIStyleState* m_OnActive;
+		struct GUIStyleState* m_OnFocused;
+		struct RectOffset* m_Border;
+		struct RectOffset* m_Padding;
+		struct RectOffset* m_Margin;
+		struct RectOffset* m_Overflow;
+		struct String* m_Name;
+	};
+
+	struct GUIStyle
+	{
+		struct GUIStyle__Class* klass;
+		MonitorData* monitor;
+		struct GUIStyle__Fields fields;
+	};
+
+	struct GUI_WindowFunction__Fields
+	{
+		struct MulticastDelegate__Fields _;
+	};
+
+	struct GUI_WindowFunction
+	{
+		struct GUI_WindowFunction__Class* klass;
+		MonitorData* monitor;
+		struct GUI_WindowFunction__Fields fields;
+	};
+
 	enum class RotationOrder__Enum : int32_t
 	{
 		OrderXYZ = 0x00000000,

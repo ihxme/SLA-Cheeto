@@ -23,6 +23,17 @@ DO_APP_FUNC(0x020450F0, Type*, Assembly_GetType, (Assembly* __this, String* name
 DO_APP_FUNC(0x0308E5B0, Scene, SceneManager_GetActiveScene, (MethodInfo* method));
 DO_APP_FUNC(0x0308FBE0, String*, Scene_GetNameInternal, (int32_t sceneHandle, MethodInfo* method));
 
+// Unity IMGUI
+DO_APP_FUNC(0x00CAF110, void, NeoLODDynamic_OnEnable, (void/*NeoLODDynamic*/* __this, MethodInfo* method));
+DO_APP_FUNC(0x030C23F0, Rect, GUI_Window, (int32_t id, Rect clientRect, GUI_WindowFunction* func, String* text, MethodInfo* method));
+DO_APP_FUNC(0x030C2BB0, bool, GUI_get_enabled, (MethodInfo* method));
+DO_APP_FUNC(0x030C3040, void, GUI_set_enabled, (bool value, MethodInfo* method));
+DO_APP_FUNC(0x030BAE50, void, GUI_Box, (Rect position, String* text, MethodInfo* method));
+DO_APP_FUNC(0x030C0CF0, void, GUI_Label, (Rect position, String* text, MethodInfo* method));
+DO_APP_FUNC(0x030C1D30, bool, GUI_Toggle, (Rect position, bool value, GUIContent* content, GUIStyle* style, MethodInfo* method));
+DO_APP_FUNC(0x030C1B40, float, GUI_Slider, (Rect position, float value, float size, float start, float end, GUIStyle* slider, GUIStyle* thumb, bool horiz, int32_t id, GUIStyle* thumbExtent, MethodInfo* method));
+DO_APP_FUNC(0x004BB950, void, GUI_WindowFunction__ctor, (GUI_WindowFunction* __this, Object* object, void* method_1, MethodInfo* method));
+
 DO_APP_FUNC(0x004A4810, void, Char3DIdentity_Init, (Char3DIdentity* __this, ENNEJEPMJLJ* IGBKKNODEGM, MethodInfo* method));
 DO_APP_FUNC(0x0040E5D0, void/*CharResourceData*/*, ENNEJEPMJLJ_GNAPBJPBKIO, (ENNEJEPMJLJ* __this, MethodInfo* method));
 DO_APP_FUNC(0x0075EF00, void/*KAAIFMKPKAG*/*, KAAIFMKPKAG_IOFMGMJCCFO, (KAAIFMKPKAG* __this, bool DEJNILEHENL, MethodInfo* method));

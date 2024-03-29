@@ -129,6 +129,9 @@
     <ClCompile Include="cheat\features\DumbEnemies.cpp">
       <Filter>features</Filter>
     </ClCompile>
+    <ClCompile Include="cheat\features\Unity_IMGUI.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Core.h">
@@ -303,6 +306,9 @@
       <Filter>vendor\magic_enum</Filter>
     </ClInclude>
     <ClInclude Include="cheat\features\DumbEnemies.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat\features\Unity_IMGUI.h">
       <Filter>features</Filter>
     </ClInclude>
   </ItemGroup>
