@@ -52,6 +52,7 @@ void Gui::Render()
 			ImGui::CheckboxFill("No Cooldown", &vars.b_NoCooldown);
 			ImGui::CheckboxFill("God Mode", &vars.b_GodMode);
 			ImGui::CheckboxFill("Damage Hack", &vars.b_DamageHack);
+			ImGui::CheckboxFill("Dumb Enemies", &vars.b_DumbEnemies);
 			if (vars.b_DamageHack)
 				ImGui::SliderFloat("Value", &vars.f_DamageHackValue, 200.0f, 5000.0f, "%1.0f");
 			ImGui::CheckboxFill("Infinite Mission Time", &vars.b_InfiniteMissionTime);
